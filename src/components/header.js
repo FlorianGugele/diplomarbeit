@@ -29,7 +29,7 @@ export default function Header() {
         <div className="bg-[#94C5CC] flex h-[13vh] items-center justify-between px-4 md:px-10">
             <div className="flex items-center h-full"> {/* Äußeren Container auf volle Höhe setzen */}
                 {/* Logo Container */}
-                <div className="flex items-center justify-center h-full border-r-2 border-black pr-2 ml-[-10px]">
+                <div className="flex items-center justify-center h-full border-r-2 border-gray-500 pr-2 ml-[-10px]">
                     <img
                         className="h-[10vh] w-auto" // Höhe des Logos auf 10vh setzen
                         src="pictures/HTL-Logo.jpg"
@@ -71,11 +71,11 @@ export default function Header() {
                             <span className="text-sm md:text-lg font-bold px-2 md:px-5">Zeitdauer</span>
                             <ChevronDownIcon className="h-5 w-5 text-gray-400" />
                         </MenuButton>
-                        <MenuItems className="absolute right-0 z-10 mt-2 w-60 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <MenuItems className="absolute right-0 z-10 mt-2 w-60 origin-top-right divide-y divide-white rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none border-gray-500">
                             {['Letzte 15 Minuten', 'Letzte 30 Minuten', 'Letzte 1 Stunde', 'Letzte 3 Stunden'].map((option, index) => (
                                 <MenuItem key={index}>
                                     {({ active }) => (
-                                        <button className={`${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'} block px-4 py-2 text-sm w-full text-left`}>
+                                        <button className={`${active ? 'bg-white text-gray-900' : 'text-gray-700'} block px-4 py-2 text-sm w-full text-left`}>
                                             {option}
                                         </button>
                                     )}
@@ -149,5 +149,6 @@ export default function Header() {
                 </div>
             )}
         </div>
+        
     );
 }
