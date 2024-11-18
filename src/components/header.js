@@ -46,15 +46,15 @@ export default function Header() {
             <div className="flex items-center space-x-4 pl-2">
                 <button
                     onClick={handleToggleDarkMode}
-                    className="flex items-center justify-center w-10 h-10 bg-white rounded-full border-4 border-gray-400 transition duration-300 group"
+                    className="flex items-center justify-center w-12 h-12 min-w-12 bg-white rounded-full border-2 border-gray-500 transition duration-300 group"
                 >
                     {isDarkMode ? (
-                        <img src="pictures/dark-mode.png" alt="Moon Icon" className="h-5 w-5" />
+                        <img src="pictures/dark-mode.png" alt="Moon Icon" className="h-6 w-6" />
                     ) : (
-                        <img src="pictures/light-mode.png" alt="Sun Icon" className="h-5 w-5" />
+                        <img src="pictures/light-mode.png" alt="Sun Icon" className="h-6 w-6" />
                     )}
                 </button>
-
+            
                 <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
                     {/* Zeitdauer Dropdown */}
                     <Menu as="div" className="relative inline-block text-left">

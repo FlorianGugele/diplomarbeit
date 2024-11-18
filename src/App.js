@@ -16,7 +16,8 @@ function App() {
         <Subheader />
         
         <Routes>
-          <Route path="/" element={<Allgemein />} />         {/* Root path for Allgemein */}
+          <Route path="/" element={<Allgemein />} />   
+          <Route path="/Allgemein" element={<Allgemein />} />       {/* Root path for Allgemein */}
           <Route path="/Neubau" element={<Neubau />} />
           <Route path="/Mode" element={<Mode />} />
           <Route path="/Chemie" element={<Chemie />} />

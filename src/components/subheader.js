@@ -18,6 +18,7 @@ export default function Subheader() {
                     Allgemein
                 </p>
             </Link>
+
             <Link to="/Neubau">
                 <p
                     className={`w-full text-center text-sm md:text-base lg:text-lg ${activeTab === "Neubau" ? "font-bold border-b-2 border-black pb-1" : ""}`}
